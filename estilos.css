@@ -1,0 +1,195 @@
+
+
+body {
+    margin: 0;
+    background-image: url(./assets/images/fondo.png); 
+    background-repeat: no-repeat;       
+    background-size: cover;             
+    background-attachment: fixed;       
+    background-position: center center; 
+    background-color: #00bcd4;
+
+}
+
+/* todo el encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 130px;
+    background-image: url(./assets/images/hero-bg.png);
+    background-repeat: no-repeat;      
+    position: relative;
+}
+
+/* Parte izquierda: título y párrafo */
+.izquierda-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50%;
+    color: aliceblue;
+}
+
+.izquierda-header h1 {
+    margin: 0;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.izquierda-header p {
+    margin-top: 5px;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* la imagen del centro */
+.centro-header {
+    position: absolute;
+    top: 50%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+}
+
+.centro-header img {
+    width: 450px;
+    height: auto;
+}
+
+/* el navegador de la derecha */
+.nav-header {
+    position: absolute;
+    top: 20px;
+    right: 150px;
+}
+
+.nav-header ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-header a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.nav-header a:hover {
+    text-decoration: underline;
+    color: #00bcd4;
+}
+
+/*main*/
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+    gap: 100px;
+    flex-direction: column;
+}
+
+.rectangulo1{
+    display: flex;
+    width: 1500px;
+    height: 250px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+.rectangulo2 {
+    display: flex;
+    width: 1500px;
+    height: 250px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px; 
+    box-sizing: border-box; 
+    flex-direction: row-reverse;
+}
+
+
+/* Imagen a la izquierda */
+.imagen {
+    flex: 1;
+    background-color: #e9e49c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #ffc400;
+    border-radius: 10px;
+
+}
+
+.imagen img {
+    max-width: 50%;
+    height: auto;
+}
+
+/* Texto a la derecha */
+.texto {
+    flex: 2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.texto h2 {
+    margin: 0;
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0f6629;
+
+}
+
+.texto p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+/*footer*/
+.footer {
+    background-color: #222;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+  }
+
+.footer-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+.footer-nav li a {
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    color: #fff;
+  }
+  
+.footer-nav li a:hover {
+    text-decoration: underline;
+    color: #00bcd4;
+  }
